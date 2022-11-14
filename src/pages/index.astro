@@ -1,0 +1,26 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="Frontend mentor challenges">
+  <main class="flex h-screen items-center justify-center w-full">
+    <ul role="list" class="grid gap-4">
+      <Card
+        href="/card"
+        title="Product preview"
+        body="Product preview card component."
+      />
+      <Card
+        href="/rating"
+        title="Rating"
+        body="Interactive rating component."
+      />
+      <Card
+        href="/three-col-card"
+        title="3-column card"
+        body="3 column preview card component."
+      />
+    </ul>
+  </main>
+</Layout>

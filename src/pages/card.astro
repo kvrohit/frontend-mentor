@@ -1,0 +1,57 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Product Card Page">
+  <div
+    class="flex items-center justify-center h-screen bg-cream text-darkGrayishBlue"
+  >
+    <div
+      class="flex flex-col mx-4 my-8 rounded-xl bg-white sm:flex-row shadow-sm sm:max-w-xl"
+    >
+      <div class="h-72 sm:h-auto sm:w-1/2">
+        <picture class="">
+          <source
+            media="(max-width: 639px)"
+            srcset="/images/image-product-mobile.jpg"
+          />
+          <source
+            media="(min-width: 640px)"
+            srcset="/images/image-product-desktop.jpg"
+          />
+          <img
+            class="h-full w-full sm:max-w-sm rounded-t-xl sm:rounded-l-xl sm:rounded-r-none"
+            src="/images/image-product-desktop.jpg"
+          />
+        </picture>
+      </div>
+      <div class="px-8 py-6 sm:w-1/2">
+        <h5
+          class="uppercase text-[0.8rem] text-gray-500 tracking-[0.4em] mb-3 sm:mb-4"
+        >
+          Perfume
+        </h5>
+        <h3 class="font-serif text-3xl text-veryDarkBlue mb-4 sm:mb-6">
+          Gabrielle Essence Eau De Parfum
+        </h3>
+        <p class="text-sm mb-4 sm:mb-6">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="flex items-center mb-4 sm:mb-6 space-x-6">
+          <span class="font-serif text-darkCyan text-3xl">$149.99</span>
+          <span class="line-through">$169.99</span>
+        </div>
+        <button
+          class="flex items-center justify-center my-2 bg-darkCyan active:bg-darkerCyan w-full py-4 rounded-lg text-white"
+        >
+          <img src="/images/icon-cart.svg" />
+          <span class="px-3">Add to Cart</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</Layout>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+</style>
